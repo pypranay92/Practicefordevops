@@ -1,1 +1,1 @@
-Once Java is installed, Set JAVA_HOME & MAVEN_HOME as environment variables on Jenkins Slave machine
+Once Java is installed, Set JAVA_HOME & MAVEN_HOME as environment variables on Jenkins Slave machine

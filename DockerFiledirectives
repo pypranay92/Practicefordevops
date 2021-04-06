@@ -1,0 +1,25 @@
+In order to create images automatically : Docker file
+
+Docker file : Docker file is a set of instructions to construct a docker image
+
+Docker file Directives 
+FROM : start a new image, usually is the first directive in the dockerfile.
+ENV : Setting up Environment variables which can be referenced in dockerfile.
+CMD: Specify a command to run a container at execution time. It helps in starting the process
+COPY : Copy files from local machine to image.
+ADD : Similar to copy buy can also pull files using a URL and extract and archive into loose  files.
+ADD has the capacity to copy the content of tar file
+RUN : Creates a new layer on top of previous layer by running this command inside that new layer and committing changes.
+STOPSIGNAL: To specify to stop the container.
+EXPOSE : Ports are intended to publish when running a container
+WORKDIR : Sets a current working directory for subsequent directives such as ADD, COPY, CMD, ENTRYPOINT, etc can be used multiple times to change the directories throughout the Dockerfile, you can use the relative path, which sets the new working directory relative to previous working directory.
+HEALTHCHECK: Specify a command to check whether the container is up and running
+
+Rules for Dockerfile
+RUN and ENV : Can be run many no of times
+CMD is used only once
+CMD : The latest one will be taken into consideration
+
+Difference between EXPOSE and Publish Port No 
+Expose is the port no of an image and another port number should be created to map from 
+HOST.

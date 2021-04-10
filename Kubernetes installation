@@ -1,4 +1,4 @@
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
 INSTALL ON MASTER AND NODE MACHINES
 
 ### INSTALL DOCKER 
@@ -19,6 +19,7 @@ curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add
 sudo apt-get update ; clear
 sudo apt-get install -y kubelet kubeadm kubectl
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
 INSTALL ON MASTER
 
 sudo kubeadm init --ignore-preflight-errors=all
@@ -33,6 +34,7 @@ kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl versio
 kubectl get nodes
 kubectl get all --all-namespaces
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
 INSTALL ON NODES
 
 copy the kubeadm join token from master & run it on all nodes
